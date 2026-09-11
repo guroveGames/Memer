@@ -1,4 +1,4 @@
-import asyncio, os, uuid, urllib.request
+import asyncio, os, uuid
 from io import BytesIO
 from aiogram import Bot, Dispatcher, F
 from aiogram.types import Message, BufferedInputFile
@@ -7,11 +7,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 BOT_TOKEN = os.environ["BOT_TOKEN"]
 
-# Скачиваем шрифт Anton (Impact-подобный, с кириллицей) при старте
-FONT_URL = "https://github.com/googlefonts/OswaldFont/raw/main/fonts/static_ttf/Oswald-Bold.ttf"
-FONT_PATH = "impact.ttf"
-if not os.path.exists(FONT_PATH):
-    urllib.request.urlretrieve(FONT_URL, FONT_PATH)
+FONT_PATH = "BebasNeue-Regular.ttf"
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
