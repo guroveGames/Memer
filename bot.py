@@ -7,7 +7,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 BOT_TOKEN = os.environ["BOT_TOKEN"]
 
-FONT_PATH = "BebasNeue-Regular.ttf"
+FONT_PATH = "Oswald-SemiBold.ttf"
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
